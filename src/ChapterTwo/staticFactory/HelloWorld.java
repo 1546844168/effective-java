@@ -1,4 +1,4 @@
-package ChapterTwo;
+package ChapterTwo.staticFactory;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -16,7 +16,6 @@ interface Service {
 interface Provider {
     Service newService();
 }
-
 
 public class HelloWorld {
 
