@@ -28,7 +28,7 @@ public class HelloWorld {
     }
 
     // 每次都是从map中直接获取，没有生成对象。
-    public Service newInstance(){
+    public Service newInstance() {
         Provider provider = map.get(DEFAULT_PROVIDER_NAME);
         Service service = provider.newService();
         return service;
