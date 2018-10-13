@@ -1,6 +1,4 @@
-package ChapterTwo.Test;
-
-import java.util.Arrays;
+package chapterTwo.Test;
 
 /**
  * @author 江峰

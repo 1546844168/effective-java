@@ -1,4 +1,4 @@
-package ChapterTwo.staticFactory;
+package chapterTwo.staticFactory;
 
 import java.util.HashMap;
 import java.util.Map;
