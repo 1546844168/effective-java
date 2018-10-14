@@ -1,4 +1,4 @@
-package ChapterTwo;
+package chapterTwo;
 
 /**
  * @author 江峰
@@ -15,6 +15,7 @@ public class Build {
         System.out.println(new Build().id);
         Build build = Build.class.newInstance();
         System.out.println(build.id);
+
         
 
     }
