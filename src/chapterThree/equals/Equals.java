@@ -35,3 +35,25 @@ public class Equals {
         System.out.println(e.hashCode());
     }
 }
+
+class A extends Equals {
+    private int num;
+
+    public A(String name, int age) {
+        super(name, age);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof A)) return false;
+        if (!super.equals(o)) return false;
+        A a = (A) o;
+        return num == a.num;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), num);
+    }
+}
