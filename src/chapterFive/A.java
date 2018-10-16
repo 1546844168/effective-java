@@ -17,9 +17,9 @@ public class A {
 }
 
 class B {
+    @SuppressWarnings("unchecked") // 压制警告
     public static void main(String[] args) {
-        List<String> list = new ArrayList<>();
-
+        List<String> list = new ArrayList();
 
     }
 
