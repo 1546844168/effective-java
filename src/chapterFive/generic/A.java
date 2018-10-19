@@ -1,4 +1,4 @@
-package chapterFive;
+package chapterFive.generic;
 
 import java.util.ArrayList;
 import java.util.List;
