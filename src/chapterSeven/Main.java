@@ -8,7 +8,7 @@ import java.util.List;
  * @create 2018-10-18 22:09
  */
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
         list.add(10);
         list.add(2);
