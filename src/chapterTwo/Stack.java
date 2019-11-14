@@ -38,13 +38,11 @@ public class Stack {
         Object o = table[--size];
         table[size] = null; // 消除过期的引用
         return o;
-
     }
 
     public void ensureCapacity() {
         if (size == table.length) {
             Arrays.copyOf(table, 2 * size + 1);
         }
-
     }
 }

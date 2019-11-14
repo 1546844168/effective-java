@@ -19,3 +19,12 @@ public class WasteObject {
         System.out.println(end - start);
     }
 }
+
+class A {
+    public static void main(String[] args) {
+        String str = "name";
+        String str1 = "name";
+
+        System.out.println(str == str1);
+    }
+}
