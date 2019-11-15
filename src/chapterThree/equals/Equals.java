@@ -17,8 +17,12 @@ public class Equals {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true; // 参数是否为这个对象的引用
-        if (!(o instanceof Equals)) return false; // 检查参数是否为正确的类型
+        if (this == o) {
+            return true; // 参数是否为这个对象的引用
+        }
+        if (!(o instanceof Equals)) {
+            return false; // 检查参数是否为正确的类型
+        }
         Equals equals = (Equals) o; // 类型转换
         return age == equals.age &&
                 Objects.equals(name, equals.name);
@@ -30,8 +34,8 @@ public class Equals {
     }
 
     public static void main(String[] args) {
-        Equals e = new Equals("江峰", 21);
-        System.out.println(27399557);
+        Equals e = new Equals("江峰", 23);
+        System.out.println(27399559);
         System.out.println(e.hashCode());
     }
 }
@@ -45,9 +49,15 @@ class A extends Equals {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof A)) return false;
-        if (!super.equals(o)) return false;
+        if (this == o) {
+            return true;
+        }
+        if (!(o instanceof A)) {
+            return false;
+        }
+        if (!super.equals(o)) {
+            return false;
+        }
         A a = (A) o;
         return num == a.num;
     }
@@ -55,5 +65,11 @@ class A extends Equals {
     @Override
     public int hashCode() {
         return Objects.hash(super.hashCode(), num);
+    }
+
+    public static void main(String[] args) {
+        Equals e = new Equals("江峰", 23);
+        A a = new A("江峰", 23);
+        System.out.println(a.equals(e));
     }
 }

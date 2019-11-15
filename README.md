@@ -18,7 +18,8 @@
 
         equals(),hashCode(),comparable()方法。；
     1.equals()方法要满足一致性，自反性，传递性
-    2.hashCode()：覆盖equals就要覆盖hashCode()方法
+    2.hashCode()：覆盖equals就要覆盖hashCode()方法。
+        equals方法相等hashCode方法的值需要相等。hashCode相等equals方法不一定相等。
     3.所有的子类都应该覆盖toString()方法。
     4.Cloneable接口是没有方法的。所有实现了Cloneable的方法都应该覆盖Object的clone方法。此方法会首先调用super.clone()，然后修正任何需要修正的域。
         不可变的类是不支持拷贝的。clone这里有点不大懂,一般情况下也不会用clone。缺点太多。

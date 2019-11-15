@@ -17,5 +17,4 @@ public final class A {
         this.name = name;
         this.age = age;
     }
-
 }
