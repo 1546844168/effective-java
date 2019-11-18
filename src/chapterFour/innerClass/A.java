@@ -8,6 +8,7 @@ import java.util.Set;
  * @create 2018-10-16 12:34
  */
 class A {
+    private String name = "林加铭";
     private B b = new B();
 
     public void fun() {
@@ -22,8 +23,9 @@ class A {
 
     class B {
         public void inner() {
-            fun(); // 非静态成员类内部方法可以直接调用外围内的方法。
+            // fun(); // 非静态成员类内部方法可以直接调用外围内的方法。
             System.out.println("inner");
+            System.out.println(name);
         }
     }
 
@@ -34,5 +36,4 @@ class A {
         HashMap hashMap = new HashMap();
         final Set set = hashMap.keySet();
     }
-
 }

@@ -1,7 +1,4 @@
 package chapterFour.functionObject;
-
-import java.util.Arrays;
-
 /**
  * @author 江峰
  * @create 2018-10-15 21:49
@@ -21,5 +18,7 @@ public class StringLengthComparator {
     public static void main(String[] args) {
         int compare = StringLengthComparator.instance.compare("namsse", "hahaa");
         System.out.println(compare);
+        int abc1 = String.CASE_INSENSITIVE_ORDER.compare("aBc", "Abc");
+        System.out.println(abc1);
     }
 }
