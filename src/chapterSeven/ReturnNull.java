@@ -11,7 +11,6 @@ public class ReturnNull {
         int[] arr = {};
         int[] fun = fun(null);
         System.out.println(Arrays.toString(fun));
-
     }
 
     public static int[] fun(int[] arr) {
