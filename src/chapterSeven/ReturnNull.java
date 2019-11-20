@@ -16,10 +16,12 @@ public class ReturnNull {
 
     public static int[] fun(int[] arr) {
         // 写出健壮性的代码，需要对入参的参数进行判断，养成一个好习惯。
-        if (arr == null)
+        if (arr == null) {
             return null;
-        if (arr.length == 0)
+        }
+        if (arr.length == 0) {
             return arr;
+        }
         return arr;
     }
 }
